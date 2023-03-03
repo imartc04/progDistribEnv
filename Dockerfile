@@ -5,7 +5,8 @@ FROM ubuntu:22.04
 RUN apt update && \
     apt install -y sudo && \
     apt install -y curl && \
-    apt install -y git
+    apt install -y git && \
+    apt install -y nano
 
 # Set up an alias for "ll" in the .bashrc file
 RUN echo "alias ll='ls -alF'" >> /root/.bashrc
